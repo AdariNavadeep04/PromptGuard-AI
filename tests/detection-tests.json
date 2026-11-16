@@ -1,0 +1,77 @@
+[
+  {
+    "id": "DET_001",
+    "prompt": "My email is rahul.sharma@example.com and phone is 9876543210. Write a leave email.",
+    "expectedEntities": [
+      { "type": "EMAIL", "value": "rahul.sharma@example.com" },
+      { "type": "PHONE", "value": "9876543210" }
+    ]
+  },
+  {
+    "id": "DET_002",
+    "prompt": "Please verify PAN ABCDE1234F for customer Rajesh Kumar.",
+    "expectedEntities": [
+      { "type": "PAN", "value": "ABCDE1234F" },
+      { "type": "PERSON", "value": "Rajesh Kumar" }
+    ]
+  },
+  {
+    "id": "DET_003",
+    "prompt": "Send Rs 5000 to user@okaxis using UPI payment.",
+    "expectedEntities": [
+      { "type": "UPI", "value": "user@okaxis" }
+    ]
+  },
+  {
+    "id": "DET_004",
+    "prompt": "My Aadhaar number is 1234 5678 9012 for verification.",
+    "expectedEntities": [
+      { "type": "AADHAAR", "value": "1234 5678 9012" }
+    ]
+  },
+  {
+    "id": "DET_005",
+    "prompt": "Transfer funds to Account 918273645019 with IFSC HDFC0001234.",
+    "expectedEntities": [
+      { "type": "BANK_ACCOUNT", "value": "918273645019" },
+      { "type": "IFSC", "value": "HDFC0001234" }
+    ]
+  },
+  {
+    "id": "DET_006",
+    "prompt": "My secret API key is sk_live_51MzX92kL00291abcxyz for production deployment.",
+    "expectedEntities": [
+      { "type": "API_KEY", "value": "sk_live_51MzX92kL00291abcxyz" }
+    ]
+  },
+  {
+    "id": "DET_007",
+    "prompt": "My password is SuperP@ssw0rd2026 for the admin portal.",
+    "expectedEntities": [
+      { "type": "PASSWORD", "value": "SuperP@ssw0rd2026" }
+    ]
+  },
+  {
+    "id": "DET_008",
+    "prompt": "Explain quantum computing in simple terms for high school students.",
+    "expectedEntities": []
+  },
+  {
+    "id": "DET_009",
+    "prompt": "Dr. Ananya Sen diagnosed patient Amit Verma with Type 2 Diabetes at Max Hospital Bangalore.",
+    "expectedEntities": [
+      { "type": "PERSON", "value": "Ananya Sen" },
+      { "type": "PERSON", "value": "Amit Verma" },
+      { "type": "ORGANIZATION", "value": "Max Hospital" },
+      { "type": "ADDRESS", "value": "Bangalore" }
+    ]
+  },
+  {
+    "id": "DET_010",
+    "prompt": "Contact support at support@company.org or call +91-9988776655 for assistance.",
+    "expectedEntities": [
+      { "type": "EMAIL", "value": "support@company.org" },
+      { "type": "PHONE", "value": "+91-9988776655" }
+    ]
+  }
+]
